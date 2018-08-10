@@ -1,0 +1,23 @@
+<div style="width:100%">
+    <div style="width:500px;margin:200px auto;">
+<h1>Em que posso ajudar?</h1>
+
+<ng-container *ngFor="let message of messages | async">
+
+  <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+                                    'to':   message.sentBy === 'user' }">
+    {{ message.content }}
+  </div>
+
+</ng-container>
+
+
+<label for="nameField">Digite uma resposta:</label>
+
+
+<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+
+<button (click)="sendMessage()">Enviar</button>
+
+</div>
+</div>
