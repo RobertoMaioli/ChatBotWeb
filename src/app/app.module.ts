@@ -10,9 +10,9 @@ import { ChatModule } from './chat/chat.module';
   ],
   imports: [
     BrowserModule,
-    ChatModule
+    ChatModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

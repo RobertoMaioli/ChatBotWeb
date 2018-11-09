@@ -6,7 +6,7 @@ export const environment = {
   production: false,
 
   dialogflow: {
-    angularBot: 'SEU_TOKEN_CLIENT_DIALOG_FLOW'
+    angularBot: 'fb31f8d4b1f74de0a36210a4fb310096'
   }
 };
 

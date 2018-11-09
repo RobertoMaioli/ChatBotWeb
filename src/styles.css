@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    font-size: 2rem !important;
+}
+
+h1{
+    color: #fff !important;
+    letter-spacing: normal !important;
+}
+
+input[type='text']:focus{
+    border: 2px solid #0e69a7;
+}
+
+button{
+    background-color: #429cc5;
+    border: solid 2px #0d69a7;
+    border-radius: 5px !important;
+}
+
+.bg{
+    background: url(assets/fundo01a1.jpg) no-repeat;
+}
+
+.robo{
+    bottom: 0;
+}
+
+.box-chat{
+    width:605px;
+    height: 300px;
+    background: rgba(0, 62, 128, 0.49);
+    padding: 30px;
+    border: 10px double #fff;
+    border-radius: 5px;
+    overflow-y:auto;
+}
+
+.send-text{
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.message{
+    padding: 5px 20px !important;
+}

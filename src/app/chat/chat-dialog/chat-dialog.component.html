@@ -1,23 +1,23 @@
-<div style="width:100%">
-    <div style="width:500px;margin:200px auto;">
-<h1>Em que posso ajudar?</h1>
+<h1 class="text-center pb-5">Oiiii, quer conversar comigo? <br>Pergunte o que quiser.</h1>
 
-<ng-container *ngFor="let message of messages | async">
-
-  <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
-                                    'to':   message.sentBy === 'user' }">
-    {{ message.content }}
+<div class="" style="width:100%; height:300px">
+  <div class="box-chat">
+    <ng-container *ngFor="let message of messages | async">
+      <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+        'to':   message.sentBy === 'user' }">   
+          {{ message.content }}
+      </div>
+    </ng-container>
   </div>
-
-</ng-container>
-
-
-<label for="nameField">Digite uma resposta:</label>
-
-
-<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
-
-<button (click)="sendMessage()">Enviar</button>
-
 </div>
+  
+<div class="send-text mt-3">
+  <div class="form-row">
+    <div class="col-9">
+      <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+    </div>
+    <div class="col-3">
+        <button (click)="sendMessage()">Enviar</button>
+    </div>
+  </div>
 </div>
